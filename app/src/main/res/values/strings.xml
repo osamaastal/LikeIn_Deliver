@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">LikeIn_Deliver</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="error_text">الرجاء إتمام بيانات حسابك في ملفك الشخصي لتبدأ بإستقبال الطلبات</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="terms_description_tx1"> نص يمكن استبداله، نص يمكن استبداله، نص يمكن استبداله، نص يمكن استبداله، نص يمكن استبداله، نص يمكن استبداله، نص يمكن استبداله ، داله، نص يمكن استبداله، نص يمكن استبداله، نص يمكن استبداله، نص يمكن استبداله، نص يمكن استبداله، نص يمكن استبداله، نص يمكن استبداله، نص يمكن استبداله، نص يمكن استبداله، نص يمكن استبداله، نص يمكن استبداله، نص يمكن استبداله، نص يمكن استبداله</string>
+
+    <string name="country_prompt">السعودية</string>
+    <string-array name="country_arrays">
+        <item>السعودية</item>
+        <item>الإمارات</item>
+        <item>البحرين</item>
+        <item>قطر</item>
+        <item>اليمن</item>
+        <item>الجزائر</item>
+        <item>فلسطين</item>
+    </string-array>
+</resources>
