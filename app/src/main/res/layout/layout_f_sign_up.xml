@@ -30,6 +30,7 @@
             android:layout_weight="35"
             android:layout_gravity="center"
             android:text="سجل ك مندوب"
+            android:fontFamily="@font/questv1_bold"
             android:textColor="@color/half_light_gray_opacity_100"
             android:textSize="28sp"
             android:textStyle="bold"
@@ -38,6 +39,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             />
         <ImageView
+            android:id="@+id/back_btn"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginEnd="22dp"
@@ -66,8 +68,10 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:maxLines="1"
-                android:maxLength="35"
+                android:maxLength="50"
+                android:textColor="@color/dark_mint"
                 android:hint="الاسم الكامل"
+                android:fontFamily="@font/tajawal_medium"
                 android:textSize="16sp"
                 android:backgroundTint="@color/et_line"
                 android:textColorHint="@color/et_hint"
@@ -82,6 +86,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="+966"
+                    android:fontFamily="@font/tajawal_medium"
                     android:textColor="@color/et_hint"
                     android:textSize="16sp"
                     android:layout_marginEnd="-40dp"
@@ -93,8 +98,11 @@
                     android:layout_height="wrap_content"
                     android:maxLines="1"
                     android:maxLength="13"
-                    android:inputType="number"
+                    android:inputType="phone"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/dark_mint"
                     android:hint="رقم الجوال"
+                    android:fontFamily="@font/tajawal_medium"
                     android:textSize="16sp"
                     android:backgroundTint="@color/et_line"
                     android:textColorHint="@color/et_hint"
@@ -108,16 +116,21 @@
                 android:inputType="textEmailAddress"
                 android:hint="البريد الإلكتروني"
                 android:textSize="16sp"
+                android:textColor="@color/dark_mint"
+                android:fontFamily="@font/tajawal_medium"
                 android:backgroundTint="@color/et_line"
                 android:textColorHint="@color/et_hint"
                 android:paddingBottom="22dp"
-                android:layout_marginTop="5dp"/>
+                android:layout_marginTop="5dp"
+                />
             <EditText
                 android:id="@+id/gender_et"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="اختر نوع الجنس"
                 android:textSize="16sp"
+                android:textColor="@color/dark_mint"
+                android:fontFamily="@font/tajawal_medium"
                 android:backgroundTint="@color/et_line"
                 android:textColorHint="@color/et_hint"
                 android:paddingBottom="22dp"
@@ -129,6 +142,9 @@
                 android:inputType="textPassword"
                 android:hint="كلمة المرور"
                 android:textSize="16sp"
+                android:maxLength="50"
+                android:textColor="@color/dark_mint"
+                android:fontFamily="@font/tajawal_medium"
                 android:backgroundTint="@color/et_line"
                 android:textColorHint="@color/et_hint"
                 android:paddingBottom="22dp"
@@ -141,9 +157,12 @@
                 android:inputType="textPassword"
                 android:hint="تأكيد كلمة المرور"
                 android:textSize="16sp"
+                android:textColor="@color/dark_mint"
+                android:fontFamily="@font/tajawal_medium"
                 android:backgroundTint="@color/et_line"
                 android:textColorHint="@color/et_hint"
                 android:paddingBottom="22dp"
+                android:maxLength="50"
                 android:layout_marginTop="5dp"
                 android:textAlignment="textEnd"/>
             <LinearLayout
@@ -158,6 +177,7 @@
                     android:text="بمتابعتي للتسجيل فأنا أوافق وأقر على إطلاعي على شروط وسياسة تطبيق لايك إن "
                     android:textColor="@color/et_hint"
                     android:textSize="13sp"
+                    android:fontFamily="@font/tajawal_medium"
                     android:layout_marginEnd="0dp"
                     android:layout_gravity="center_vertical"
                     />
@@ -175,6 +195,7 @@
                 android:text="تسجيل الدخول"
                 android:textColor="@color/white"
                 android:textSize="17sp"
+                android:fontFamily="@font/questv1_bold"
                 android:background="@drawable/btn_green"
                 android:paddingStart="38dp"
                 android:paddingEnd="38dp"
@@ -196,6 +217,7 @@
                     android:text="سجل دخولك"
                     android:textColor="@color/link_blue"
                     android:textSize="13sp"
+                    android:fontFamily="@font/tajawal_medium"
                     android:layout_marginEnd="5dp"/>
                 <TextView
                     android:layout_width="wrap_content"
@@ -203,6 +225,7 @@
                     android:text="لديك حساب مندوب بالفعل؟ "
                     android:textColor="@color/greyish_brown1"
                     android:textSize="13sp"
+                    android:fontFamily="@font/tajawal_medium"
                    />
             </LinearLayout>
         </LinearLayout>

@@ -3,56 +3,152 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="88dp"
-    >
-    <ImageView
-        android:id="@+id/img"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="37dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        />
-    <TextView
-        android:id="@+id/alert_address_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="عنوان التنبيه"
-        android:textSize="15dp"
-        android:textColor="@color/dark_mint"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="15dp"
-        app:layout_constraintRight_toLeftOf="@+id/img"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+    android:layout_height="wrap_content"
+    android:layout_marginTop="18dp">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/Layout1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="مثال لنص ممكن أن يستبدل، مثال بسيط لنص يمكن أن يستبدل."
-        android:textColor="#4397ff"
-        android:textSize="10sp"
-        android:layout_marginTop="3dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginStart="37dp"
-        app:layout_constraintRight_toLeftOf="@+id/img"
-        app:layout_constraintTop_toBottomOf="@+id/alert_address_tv"
-        tools:ignore="SmallSp" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="2018\12\20"
-        android:textSize="10sp"
-        android:textColor="#707070"
-        android:layout_marginTop="32dp"
-        android:layout_marginStart="37dp"
+        android:orientation="horizontal"
+
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="SmallSp" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/alert_date_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:text="2018/12/20"
+                    android:textColor="#707070"
+                    android:textSize="10sp"
+                    tools:ignore="SmallSp" />
+                <TextView
+                    android:id="@+id/alert_title_tv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/tajawal_bold"
+                    android:text="عنوان التنبيه"
+                    android:textColor="@color/dark_mint"
+                    android:textSize="14sp"
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/alert_content_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/tajawal_medium"
+                android:text="مثال لنص ممكن أن يستبدل، مثال بسيط لنص يمكن أن يستبدل."
+                android:textColor="#4397ff"
+                android:textSize="10sp"
+                app:layout_constraintRight_toLeftOf="@+id/alert_img"
+                app:layout_constraintTop_toBottomOf="@+id/title_tv"
+                tools:ignore="SmallSp" />
+
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/alert_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_alert_img"
+            android:padding="10dp"
+            android:src="@drawable/ic_notification"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/view_bg"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/Layout1"
         app:layout_constraintBottom_toBottomOf="parent"/>
+    <!--<LinearLayout-->
+        <!--android:id="@+id/Layout1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/alert_date_tv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="0dp"-->
+            <!--android:text="2018/12/20"-->
+            <!--android:textColor="#707070"-->
+            <!--android:textSize="10sp"-->
+            <!--tools:ignore="SmallSp" />-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginEnd="15dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="right"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/alert_title_tv"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:fontFamily="@font/tajawal_bold"-->
+                <!--android:text="عنوان التنبيه"-->
+                <!--android:textColor="@color/dark_mint"-->
+                <!--android:textSize="14sp"-->
+
+                <!--/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/alert_content_tv"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="3dp"-->
+                <!--android:fontFamily="@font/tajawal_medium"-->
+                <!--android:text="مثال لنص ممكن أن يستبدل، مثال بسيط لنص يمكن أن يستبدل."-->
+                <!--android:textColor="#4397ff"-->
+                <!--android:textSize="10sp"-->
+                <!--app:layout_constraintRight_toLeftOf="@+id/alert_img"-->
+                <!--app:layout_constraintTop_toBottomOf="@+id/alert_title_tv"-->
+                <!--tools:ignore="SmallSp" />-->
+        <!--</LinearLayout>-->
+        <!--<ImageView-->
+            <!--android:id="@+id/alert_img"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:background="@drawable/bg_alert_img"-->
+            <!--android:padding="10dp"-->
+            <!--android:src="@drawable/ic_notification"-->
+            <!--app:layout_constraintRight_toRightOf="parent"-->
+            <!--app:layout_constraintTop_toTopOf="parent" />-->
+    <!--</LinearLayout>-->
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/view_bg"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/Layout1"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"/>-->
 </android.support.constraint.ConstraintLayout>

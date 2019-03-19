@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="280dp"
+    android:layout_height="310dp"
+    android:layout_gravity="center"
+    app:cardElevation="5dp"
+    app:cardBackgroundColor="@color/white"
+    >
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tx1_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="أريد إلغاء الطلب بسبب:"
+            android:textSize="15sp"
+            android:textColor="#5e5e5e"
+            android:fontFamily="@font/questv1_bold"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="25dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+        <EditText
+            android:id="@+id/cancelReq_et"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@drawable/bg_cancel_popup"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:gravity="top|right"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:hint="أدخل السبب هُنا"
+            android:fontFamily="@font/tajawal_medium"
+            android:textColor="#5e5e5e"
+            android:textSize="15sp"
+            android:maxLines="10"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tx1_tv"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+            <Button
+                android:id="@+id/cancelReq_btn"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="إلغاء الطلب"
+                android:textSize="16sp"
+                android:textColor="#f8f8f8"
+                android:fontFamily="@font/questv1_bold"
+                android:background="@drawable/btn_gray_no_redius"
+                />
+            <Button
+                android:id="@+id/back_btn"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="تراجع عن الإلغاء"
+                android:textSize="16sp"
+                android:textColor="#f8f8f8"
+                android:fontFamily="@font/questv1_bold"
+                android:background="@drawable/btn_green_no_redius"
+                />
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>
+

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">LikeIn_Deliver</string>
+    <string name="app_name">LikeIn المندوب</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -10,12 +10,21 @@
 
     <string name="country_prompt">السعودية</string>
     <string-array name="country_arrays">
+        <item>اختر الدولة</item>
         <item>السعودية</item>
         <item>الإمارات</item>
         <item>البحرين</item>
         <item>قطر</item>
         <item>اليمن</item>
+        <item>عمان</item>
         <item>الجزائر</item>
         <item>فلسطين</item>
+        <item>الأردن</item>
+        <item>لبنان</item>
+        <item>سوريا</item>
+        <item>تونس</item>
+        <item>السودان</item>
+        <item>ليبيا</item>
+        <item>العراق</item>
     </string-array>
 </resources>

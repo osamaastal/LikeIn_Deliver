@@ -6,12 +6,14 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
+import com.example.engosama.likein_deliver.Activities.Login;
 import com.example.engosama.likein_deliver.R;
 
 public class Password_BackUp extends Fragment {
     View view;
-
+    ImageView back_btn;
     public Password_BackUp() {
         // Required empty public constructor
     }
@@ -31,6 +33,13 @@ public class Password_BackUp extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.layout_f_password_back_up, container, false);
+        back_btn = view.findViewById(R.id.back_btn);
+        back_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Login.switch_fragment(new Login_frag());
+            }
+        });
         return view;
     }
 

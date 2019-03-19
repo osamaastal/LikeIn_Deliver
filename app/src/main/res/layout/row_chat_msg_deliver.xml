@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/msg_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7:40 PM"
+        android:textSize="12sp"
+        android:textColor="#9095a4"
+        android:fontFamily="@font/tajawal_regular"
+        android:layout_marginBottom="5.5dp"
+        />
+    <TextView
+        android:id="@+id/msg_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="مرحباً، أحتاج مساعدة، طلبي تأخر.."
+        android:textSize="13sp"
+        android:textColor="#464655"
+        android:fontFamily="@font/tajawal_regular"
+        android:background="@drawable/bg_msg_deliver"
+        android:padding="17dp"
+        android:layout_marginBottom="10dp"
+        android:maxWidth="210dp"
+        />
+</LinearLayout>

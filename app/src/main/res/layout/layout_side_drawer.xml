@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="end"
+    android:background="@color/dark_mint"
+    android:gravity="right"
+    android:orientation="vertical"
+    android:paddingStart="50dp"
+    android:paddingTop="70dp"
+    android:paddingEnd="50dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userImg"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/ic_user_img_white"
+            app:civ_border_color="@color/dark_mint"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:id="@+id/user_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/tajawal_medium"
+            android:text="اسم العميل"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/user_phone_no_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/tajawal_medium"
+            android:text="+966 55 000 0000"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+        <!--**********************-->
+        <TextView
+            android:id="@+id/my_profile_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:drawableEnd="@drawable/icon_slider_profile"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/tajawal_medium"
+            android:text="ملفي الشخصي"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="147dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="24dp"
+            android:background="#65ffffff" />
+
+        <TextView
+            android:id="@+id/conditions_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:drawableEnd="@drawable/icon_slider_rools"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/tajawal_medium"
+            android:text="الشروط والأحكام"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/connection_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:drawableEnd="@drawable/icon_slider_connection"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/tajawal_medium"
+            android:text="تواصل معنا"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/rate_app_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:drawableEnd="@drawable/icon_slider_rate_app"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/tajawal_medium"
+            android:text="تقييم التطبيق"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/share_app_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:drawableEnd="@drawable/icon_slider_share_app"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/tajawal_medium"
+            android:text="شارك التطبيق"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="147dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="25dp"
+            android:background="#65ffffff" />
+
+        <TextView
+            android:id="@+id/logout_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:drawableEnd="@drawable/icon_slider_logout"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/tajawal_medium"
+            android:text="تسجيل الخروج"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>

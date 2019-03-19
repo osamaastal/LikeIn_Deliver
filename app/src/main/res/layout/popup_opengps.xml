@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="265dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/tx1_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="يرجى فتح محدد ال GPS"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:fontFamily="@font/tajawal_medium"
+        android:layout_marginTop="35dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:drawableTop="@drawable/ic_location"
+        android:drawablePadding="20dp"
+        android:gravity="center"
+        />
+
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:weightSum="2"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/tx1_tv"
+       >
+       <Button
+
+           android:id="@+id/open_sitting_btn"
+           android:layout_width="0dp"
+           android:layout_weight="1.3"
+           android:layout_height="wrap_content"
+           android:text="الذهاب الى الإعدادات"
+           android:textColor="@color/white"
+           android:textSize="18sp"
+           android:fontFamily="@font/tajawal_medium"
+           android:background="@color/dark_mint"
+           android:paddingTop="16dp"
+           android:paddingBottom="16dp"
+           android:layout_marginTop="14dp"
+           android:layout_marginRight="1dp"
+             />
+       <Button
+
+           android:id="@+id/cancel_btn"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:text="إلغاء"
+           android:textColor="@color/white"
+           android:textSize="18sp"
+           android:fontFamily="@font/tajawal_medium"
+           android:layout_weight="0.7"
+           android:background="#969696"
+           android:paddingTop="16dp"
+           android:paddingBottom="16dp"
+           android:layout_marginTop="14dp"
+           />
+   </LinearLayout>
+</android.support.constraint.ConstraintLayout>

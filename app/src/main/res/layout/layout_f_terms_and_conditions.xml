@@ -26,8 +26,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:paddingStart="50dp"
-            android:paddingEnd="50dp"
+            android:fontFamily="@font/questv1_bold"
             android:text="الشروط والأحكام"
             android:textAlignment="center"
             android:textColor="@color/white"
@@ -52,45 +51,14 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="88"
-        android:layout_marginTop="50dp">
-        <LinearLayout
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/TermsAndConditions_RV"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingEnd="37dp"
-            android:paddingStart="37dp"
-            android:orientation="vertical">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="شروط الخدمة"
-                android:textColor="@color/dark_gray"
-                android:textSize="22sp"
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/terms_description_tx1"
-                android:textColor="@color/half_light_gray_opacity_100"
-                android:textSize="18sp"
-                android:layout_marginTop="12dp"
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="سياسة الخصوصية"
-                android:textColor="@color/dark_gray"
-                android:textSize="22sp"
-                android:layout_marginTop="50dp"
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/terms_description_tx1"
-                android:textColor="@color/half_light_gray_opacity_100"
-                android:textSize="18sp"
-                android:layout_marginTop="12dp"
-                />
+            android:layout_marginEnd="37dp"
+            android:layout_marginStart="37dp"
 
-        </LinearLayout>
+            />
     </ScrollView>
 </LinearLayout>

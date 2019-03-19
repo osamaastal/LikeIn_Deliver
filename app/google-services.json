@@ -1,0 +1,113 @@
+{
+  "project_info": {
+    "project_number": "569402184803",
+    "firebase_url": "https://liken-f72be.firebaseio.com",
+    "project_id": "liken-f72be",
+    "storage_bucket": "liken-f72be.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:569402184803:android:0b645f72244e7ded",
+        "android_client_info": {
+          "package_name": "com.example.engosama.likein"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "569402184803-aipp9kdkk3ck7svh6284nlhffueebdeb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.engosama.likein",
+            "certificate_hash": "254ec7f01221988f5c83e3e31a923ec081f43765"
+          }
+        },
+        {
+          "client_id": "569402184803-rd3dbiuh8gviktpeau9v47lgvukqmtei.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCn102xHQnGjFVQxT-fPgpmzCpSQTkPKqY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "569402184803-rd3dbiuh8gviktpeau9v47lgvukqmtei.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "569402184803-tmk4vibsr7ipc6vl9l4ssg88lbf5vd05.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.Liken.Liken.Liken"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:569402184803:android:53c13cf70710eca4",
+        "android_client_info": {
+          "package_name": "com.example.engosama.likein_deliver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "569402184803-9hrkub9lrqm35v01iebp3gjjgbaakgos.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.engosama.likein_deliver",
+            "certificate_hash": "c4ce8cbd1fcaa292d5c8b7b78afdf8065d0a8623"
+          }
+        },
+        {
+          "client_id": "569402184803-rd3dbiuh8gviktpeau9v47lgvukqmtei.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCn102xHQnGjFVQxT-fPgpmzCpSQTkPKqY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "569402184803-rd3dbiuh8gviktpeau9v47lgvukqmtei.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "569402184803-tmk4vibsr7ipc6vl9l4ssg88lbf5vd05.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.Liken.Liken.Liken"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -4,8 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="170dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_marginStart="29dp"
-    android:layout_marginEnd="29dp"
     android:layout_marginTop="15dp"
     android:layout_marginBottom="15dp"
     android:background="#f7ddc9">
@@ -51,92 +49,84 @@
         app:layout_constraintRight_toRightOf="parent"
         />
     <TextView
+        android:id="@+id/reqNumber_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="#123545896"
-        android:textSize="15sp"
+        android:textSize="13sp"
+        android:fontFamily="@font/tajawal_bold"
         android:textColor="#f9750f"
         android:layout_marginEnd="18dp"
+        android:maxLength="20"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/H_line1"
         />
+
+
     <TextView
+        android:id="@+id/username_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/tajawal_medium"
         android:text="لينه حاتم"
-        android:textSize="12sp"
         android:textColor="#636363"
+        android:textSize="12sp"
         android:layout_marginEnd="12dp"
         app:layout_constraintRight_toLeftOf="@+id/V_line1"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/H_line1"
-        />
+         />
     <TextView
         android:id="@+id/hyber1_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="هايبر العثيم"
         android:textSize="10sp"
+        android:fontFamily="@font/tajawal_medium"
         android:textColor="#636363"
         android:layout_marginEnd="18dp"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/H_line2"
         app:layout_constraintTop_toBottomOf="@+id/H_line1"
         />
+
     <TextView
-        android:id="@+id/tx1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="-"
-        android:textSize="12sp"
-        android:textColor="#636363"
-        android:layout_marginEnd="5dp"
-        app:layout_constraintRight_toLeftOf="@+id/hyber1_tv"
-        app:layout_constraintBottom_toTopOf="@+id/H_line2"
-        app:layout_constraintTop_toBottomOf="@+id/H_line1"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="هايبر لولو ماركت"
-        android:textSize="10sp"
-        android:textColor="#636363"
-        android:layout_marginEnd="5dp"
-        app:layout_constraintRight_toLeftOf="@+id/tx1"
-        app:layout_constraintBottom_toTopOf="@+id/H_line2"
-        app:layout_constraintTop_toBottomOf="@+id/H_line1"
-        tools:ignore="SmallSp" />
-    <TextView
-        android:id="@+id/time_tv"
+        android:id="@+id/req_time_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="06:00 pm"
         android:textSize="10sp"
         android:textColor="#636363"
+        android:fontFamily="@font/tajawal_medium"
         android:layout_marginEnd="12dp"
         app:layout_constraintRight_toLeftOf="@+id/V_line1"
         app:layout_constraintBottom_toTopOf="@+id/H_line2"
         app:layout_constraintTop_toBottomOf="@+id/H_line1"
         tools:ignore="SmallSp" />
     <TextView
+        android:id="@+id/req_date_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="2018\12\12,"
+        android:text="2018/12/12,"
         android:textSize="10sp"
         android:textColor="#636363"
         android:layout_marginEnd="3dp"
-        app:layout_constraintRight_toLeftOf="@+id/time_tv"
+        android:fontFamily="@font/tajawal_medium"
+        app:layout_constraintRight_toLeftOf="@+id/req_time_tv"
         app:layout_constraintBottom_toTopOf="@+id/H_line2"
         app:layout_constraintTop_toBottomOf="@+id/H_line1"
         tools:ignore="SmallSp" />
     <TextView
+        android:id="@+id/address_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="الرياض، حي السعادة، مخرج 15"
         android:textSize="10sp"
         android:textColor="#636363"
+        android:fontFamily="@font/tajawal_medium"
         android:layout_marginEnd="18dp"
+        android:maxLength="25"
         app:layout_constraintRight_toLeftOf="@+id/V_line2"
         app:layout_constraintBottom_toTopOf="@+id/H_line3"
         app:layout_constraintTop_toBottomOf="@+id/H_line2"
@@ -147,6 +137,7 @@
         android:layout_height="wrap_content"
         android:text="20"
         android:textSize="10sp"
+        android:fontFamily="@font/tajawal_medium"
         android:textColor="#636363"
         android:layout_marginEnd="12dp"
         app:layout_constraintRight_toLeftOf="@+id/V_line1"
@@ -159,6 +150,7 @@
         android:text="منتج"
         android:textSize="10sp"
         android:textColor="#636363"
+        android:fontFamily="@font/tajawal_medium"
         android:layout_marginEnd="5dp"
         app:layout_constraintRight_toLeftOf="@+id/no_of_products_tv"
         app:layout_constraintBottom_toTopOf="@+id/H_line3"
@@ -166,11 +158,12 @@
         tools:ignore="SmallSp" />
 
     <Button
-        android:id="@+id/completed_btn"
+        android:id="@+id/current_btn"
         android:layout_width="wrap_content"
         android:layout_height="26dp"
         android:text="جاري الشراء"
         android:textSize="11sp"
+        android:fontFamily="@font/tajawal_bold"
         android:textColor="@color/white"
         android:background="@drawable/btn_orange_no_redius"
         tools:ignore="SmallSp"
@@ -184,15 +177,17 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginStart="15dp"
-        app:layout_constraintLeft_toRightOf="@+id/completed_btn"
+        app:layout_constraintLeft_toRightOf="@+id/current_btn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/H_line3"
         >
         <TextView
+            android:id="@+id/cost_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="190"
             android:textSize="15sp"
+            android:fontFamily="@font/tajawal_bold"
             android:textColor="#3d3d3d"
             />
         <TextView
@@ -200,6 +195,7 @@
             android:layout_height="wrap_content"
             android:text="SR"
             android:textSize="15sp"
+            android:fontFamily="@font/tajawal_bold"
             android:textColor="#3d3d3d"
             android:layout_marginStart="5dp"
             />
@@ -211,7 +207,7 @@
         android:src="@drawable/call_icon_orange"
         android:background="@drawable/icon_orange_bg"
         android:padding="6dp"
-        android:layout_marginEnd="18dp"
+        android:layout_marginEnd="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/H_line3"
